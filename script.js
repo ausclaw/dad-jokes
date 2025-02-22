@@ -17,3 +17,10 @@ async function generateJoke() {
 generateJoke();
 
 jokeBtn.addEventListener('click', generateJoke);
+
+const audio = document.getElementById('clickSFX');
+const button = document.getElementById('jokeBtn');
+
+button.addEventListener('click', () => {
+  audio.play();
+});
